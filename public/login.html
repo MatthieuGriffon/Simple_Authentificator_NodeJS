@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page de connexion</title>
+  </head>
+  <body>
+    <h1>Page de connexion</h1>
+    <form action="/inscription" method="post">
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" value="S'inscrire">
+    </form>
+    <h1>Utilisateur enregistré</h1> <!-- Titre principal de la page -->
+    <form action="/connexion" method="post"> <!-- Début du formulaire de connexion, la méthode POST sera utilisée pour envoyer les données -->
+      <label for="username">Nom d'utilisateur :</label> <!-- Étiquette pour le champ de saisie du nom d'utilisateur -->
+      <input type="text" id="username" name="username" required> <!-- Champ de saisie du nom d'utilisateur, obligatoire -->
+      <br>
+      <label for="password">Mot de passe :</label> <!-- Étiquette pour le champ de saisie du mot de passe -->
+      <input type="password" id="password" name="password" required> <!-- Champ de saisie du mot de passe, de type "password" pour masquer les caractères, obligatoire -->
+      <br>
+      <input type="submit" value="Se connecter"> <!-- Bouton de soumission du formulaire, étiqueté "Se connecter" -->
+    </form> <!-- Fin du formulaire -->
+  </body>
+</html>
